@@ -18,16 +18,16 @@ mkdir model
 
 ```
 # Horizon 3
-python learn.py --save ./model/model-traffic-3.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 3 --hidden_size 256 --k_day 30 --n_neighbor 20
+python learn.py --save ./model/model-traffic-3.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 3 --hidden_size 256 --hidden_batch_size 64 --k_day 30 --n_neighbor 20
 
 # Horizon 6
-python learn.py --save ./model/model-traffic-6.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 6 --hidden_size 256 --k_day 5 --n_neighbor 30
+python learn.py --save ./model/model-traffic-6.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 6 --hidden_size 256 --hidden_batch_size 64 --k_day 5 --n_neighbor 30
 
 # Horizon 12
-python learn.py --save ./model/model-traffic-12.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 12 --hidden_size 256 --k_day 10 --n_neighbor 30
+python learn.py --save ./model/model-traffic-12.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 12 --hidden_size 256 --hidden_batch_size 64 --k_day 10 --n_neighbor 30
 
 # Horizon 24
-python learn.py --save ./model/model-traffic-24.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 24 --hidden_size 256 --k_day 3 --n_neighbor 10
+python learn.py --save ./model/model-traffic-24.pt --data ./data/traffic.txt --num_nodes 862 --epoch 100 --horizon 24 --hidden_size 256 --hidden_batch_size 64 --k_day 3 --n_neighbor 10
 ```
 
 * Electricity

@@ -148,6 +148,7 @@ parser.add_argument('--hidden_size', type=int, default=512)
 parser.add_argument('--num_gru_layer', type=int, default=1)
 parser.add_argument('--k_day', type=int, default=10)
 parser.add_argument('--n_neighbor', type=int, default=10)
+parser.add_argument('--hidden_batch_size', type=int, default=128)
 
 args = parser.parse_args()
 device = torch.device(args.device)
@@ -181,7 +182,7 @@ def main():
         for epoch in range(1, args.epochs + 1):
             epoch_start_time = time.time()
 
-            train_hidden = get_train_hidden(Data, Data.train[0], Data.train[1], model, 128)
+            train_hidden = get_train_hidden(Data, Data.train[0], Data.train[1], model, args.hidden_batch_size)
             train_loss = train(Data, Data.train[0], Data.train[1], model, criterion, optim, args.batch_size, train_hidden)
 
             val_loss, val_rae, val_corr, _, _ = evaluate(Data, Data.valid[0], Data.valid[1], model, evaluateL2, evaluateL1,
@@ -207,7 +208,7 @@ def main():
     # Load the best saved model.
     with open(args.save, 'rb') as f:
         model = torch.load(f)
-    best_hidden = get_train_hidden(Data, Data.train[0], Data.train[1], model, 128)
+    best_hidden = get_train_hidden(Data, Data.train[0], Data.train[1], model, args.hidden_batch_size)
     vtest_acc, vtest_rae, vtest_corr, _, _ = evaluate(Data, Data.valid[0], Data.valid[1], model, evaluateL2, evaluateL1,
                                          args.batch_size, best_hidden)
     test_acc, test_rae, test_corr, test_predict, test_test = evaluate(Data, Data.test[0], Data.test[1], model, evaluateL2, evaluateL1,
