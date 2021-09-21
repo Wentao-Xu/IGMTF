@@ -57,7 +57,7 @@ def train(data, X, Y, model, criterion, optim, batch_size, train_hidden=None):
                 id = perm[j * num_sub:(j + 1) * num_sub]
             else:
                 id = perm[j * num_sub:]
-            id = torch.tensor(id).to(device)
+            id = torch.tensor(id, dtype=torch.long).to(device)
             tx = x[:, id, :]
             ty = y[:, id]
             if train_hidden is not None:
