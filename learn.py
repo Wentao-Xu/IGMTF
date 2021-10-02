@@ -214,8 +214,6 @@ def main():
     test_acc, test_rae, test_corr, test_predict, test_test = evaluate(Data, Data.test[0], Data.test[1], model, evaluateL2, evaluateL1,
                                          args.batch_size, best_hidden)
     
-    np.save('./results/exchange-rate-out-pred.npy', test_predict)
-    np.save('./results/exchange-rate-y.npy', test_test.cpu().numpy())
     pprint("final test rse {:5.4f} | test rae {:5.4f} | test corr {:5.4f}".format(test_acc, test_rae, test_corr))
     return vtest_acc, vtest_rae, vtest_corr, test_acc, test_rae, test_corr
 
