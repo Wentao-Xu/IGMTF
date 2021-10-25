@@ -4,6 +4,15 @@ The source code and data of the paper "[Instance-wise Graph-based Framework for 
 ## Requirements
 The framework is implemented using python3 with dependencies specified in requirements.txt
 
+## Datasets
+### Overall information of datasets
+
+| Datasets      | Variants | Timesteps | Granularity | Time | Task Type   |
+| ------------- | -------- | --------- | ----------- | ---------- | ----------- |
+| Traffic       | 862      | 17,544    | 1hour       |2015 to 2016| Single-step |
+| Electricity   | 321      | 26,304    | 1hour       |2012 to 2014| Single-step |
+| Exchange-Rate | 8        | 7,588     | 1hour       |1990 to 2016| Single-step |
+
 ## Running the code
 
 ```
