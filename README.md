@@ -1,5 +1,6 @@
 # IGMTF
 The source code and data of the paper "[Instance-wise Graph-based Framework for Multivariate Time Series Forecasting](https://arxiv.org/abs/2109.06489)". 
+![image](https://user-images.githubusercontent.com/25242325/139006981-fcded966-daf1-4697-955e-a1b4fdf4e08a.png)
 
 ## Requirements
 The framework is implemented using python3 with dependencies specified in requirements.txt
@@ -13,7 +14,8 @@ The framework is implemented using python3 with dependencies specified in requir
 | Electricity   | 321      | 26,304    | 1hour       |2012 to 2014| Single-step |
 | Exchange-Rate | 8        | 7,588     | 1hour       |1990 to 2016| Single-step |
 
-## Running the code
+## Reproduce the results
+![image](https://user-images.githubusercontent.com/25242325/139007069-798c714c-ba8f-48c7-8838-6b15512bc602.png)
 
 ```
 git clone https://github.com/Wentao-Xu/IGMTF.git
