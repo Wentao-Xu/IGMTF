@@ -61,14 +61,14 @@ python learn.py --save ./model/model-electricity-24.pt --data ./data/electricity
 
 ```
 # Horizon 3
-python learn.py --save ./model/model-exchange-3.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 3 --hidden_size 512 --batch_size 16 --k_day 20 --n_neighbor 20
+python learn.py --save ./model/model-exchange-3.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 3 --hidden_size 512 --batch_size 16 --k_day 10 --n_neighbor 10
 
 # Horizon 6
-python learn.py --save ./model/model-exchange-6.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 6 --hidden_size 512 --batch_size 16 --k_day 5 --n_neighbor 10
+python learn.py --save ./model/model-exchange-6.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 6 --hidden_size 512 --batch_size 16 --k_day 10 --n_neighbor 10
 
 # Horizon 12
 python learn.py --save ./model/model-exchange-12.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 12 --hidden_size 512 --batch_size 16 --k_day 10 --n_neighbor 10
 
 # Horizon 24
-python learn.py --save ./model/model-exchange-24.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 24 --hidden_size 512 --batch_size 16 --k_day 5 --n_neighbor 20
+python learn.py --save ./model/model-exchange-24.pt --data ./data/exchange_rate.txt --num_nodes 8 --epoch 100 --horizon 24 --hidden_size 512 --batch_size 16 --k_day 10 --n_neighbor 10
 ```
