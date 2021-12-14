@@ -1,4 +1,4 @@
-# IGMTF
+# IGMTF: Instance-wise Graph-based Framework for Multivariate Time Series Forecasting
 The source code and data of the paper "[Instance-wise Graph-based Framework for Multivariate Time Series Forecasting](https://arxiv.org/abs/2109.06489)". 
 ![image](https://user-images.githubusercontent.com/25242325/139006981-fcded966-daf1-4697-955e-a1b4fdf4e08a.png)
 
