@@ -3,7 +3,7 @@ The source code and data of the paper "[Instance-wise Graph-based Framework for 
 ![image](https://user-images.githubusercontent.com/25242325/139006981-fcded966-daf1-4697-955e-a1b4fdf4e08a.png)
 
 ## Requirements
-The framework is implemented using python3 with dependencies specified in requirements.txt
+The framework is implemented using python3 with dependencies specified in [requirements.txt](https://github.com/Wentao-Xu/IGMTF/blob/main/requirements.txt).
 
 ## Datasets
 ### Overall information of datasets
